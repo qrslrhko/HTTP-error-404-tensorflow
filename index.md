@@ -8,8 +8,8 @@ HTTP error 404 while getting https://storage.googleapis.com/tensorflow/mac/gpu/t
 Could not install requirement tensorflow-gpu==1.0.1 from https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl because of HTTP error 404 Client Error: Not Found for url: https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl for URL https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl
 
 ```
-my OS version on mac: 10.10.5
-python: 3.5.2 in : Anaconda custom (x86_64)
+- my OS version on mac: 10.10.5
+- python: 3.5.2 in :    Anaconda custom (x86_64)
 
 Try type this commond to know your python version:
 ``` 
