@@ -11,9 +11,10 @@ Could not install requirement tensorflow-gpu==1.0.1 from https://storage.googlea
 my OS version on mac: 10.10.5
 python: 3.5.2 in : Anaconda custom (x86_64)
 
-try type this commond to know your python version
+Try type this commond to know your python version:
 ``` 
-python --version
+$ python --version
+Python 3.6.0 :: Anaconda 4.3.0 (x86_64)
 ```
 
 
