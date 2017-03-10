@@ -76,4 +76,6 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: module 'tensorflow' has no attribute 'constant'
 ```
-change your auccrnet directory to another directory. For example, use `cd ..` command line goes to upper level directory.
+Change your current directory to another directory that help you solve this problem. For example, use `cd ..` command line goinf to upper level directory.
+
+
