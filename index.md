@@ -25,8 +25,8 @@ Note: if you use graphical installer, the folder of Anaconda is called "anaconda
 
 
 
-### In order to avoid some errors, I install python 3.5 for sure. Use this common to create virtual environment for installing tensorflow.
-
+### In order to avoid some errors, I install python 3.5 for sure. 
+### Create virtual environment for installing tensorflow by this command line.
 ```
 conda create -n yourenvname python=3.5 anaconda 
 ```
