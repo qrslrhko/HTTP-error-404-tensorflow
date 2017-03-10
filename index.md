@@ -95,4 +95,5 @@ ModuleNotFoundError: No module named 'tensorflow'
 Also, if we have this error in the virtual environment, it means that we don't install tensorflow completely. I have encountered this error during installation. 
 
 
-
+Reference: https://www.tensorflow.org/install/install_mac
+Reference: http://stackoverflow.com/questions/37383812/tensorflow-module-object-has-no-attribute-placeholder
