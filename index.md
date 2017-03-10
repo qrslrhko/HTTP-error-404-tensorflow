@@ -20,8 +20,8 @@ Python 3.6.0 :: Anaconda 4.3.0 (x86_64)
 ### 1. Install [Anaconda](https://www.continuum.io/downloads) on mac:
 There are two methods to install Anaconda,including graphical installer and command line. It also depends on what kind of version of Python you use. For example, my version of python is 3.6, I choose Anaconda3-4.3.0-MacOSX-x86_64.sh to install.
 
-Note: if you install Anaconda through commond line, the folder of Anaconda is called "anaconda3"  
-Note: if you use graphical installer, the folder of Anaconda is called "anaconda"  
+- Note: if you install Anaconda through commond line, the folder of Anaconda is called "anaconda3"  
+- Note: if you use graphical installer, the folder of Anaconda is called "anaconda"  
 
 In order to avoid some errors, I install python 3.5 for sure. Soemtimes it has some problems when I use python 3.6 for tensorflow. 
 
@@ -56,7 +56,7 @@ or this one (for cpu support)
 ```
 sudo pip3 install tensorflow
 ```
-Note: If you version of Python is 2.7, use `pip` instead of `pip3` 
+- Note: If you version of Python is 2.7, use `pip` instead of `pip3` 
 
 ### 5. Let's check our installation:
 ```
@@ -70,7 +70,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> print(sess.run(hello))
 b'Hello, testing TensorFlow!'
 ```
-Note: Make sure that there are no name of file or name of folder is `tensorflow` in your current directory. 
+- Note: Make sure that there are no name of file or name of folder is `tensorflow` in your current directory. 
 For example, if I type 'python' inide the directory of desktop and there is a folder named as `tensorflow`, it could cause this error:
 
 ```
@@ -81,7 +81,7 @@ AttributeError: module 'tensorflow' has no attribute 'constant'
 ```
 Change your current directory to another directory that help you solve this problem. For example, use `cd ..` command line goinf to upper level directory.
 
-Note : After installing tensorflow in this virtual environment, we only can use tensorflow in this virtual environment. If you import tensorflow outside of this virtual environment, it could cause this error:
+- Note : After installing tensorflow in this virtual environment, we only can use tensorflow in this virtual environment. If you import tensorflow outside of this virtual environment, it could cause this error:
 ```
 $ python
 Python 3.6.0 |Anaconda 4.3.0 (x86_64)| 
@@ -92,7 +92,7 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ModuleNotFoundError: No module named 'tensorflow'
 ```
-Also, if we have this error in the virtual environment, that means we don't install tensorflow completely. I have encountered this error during installation. 
+Also, if we have this error in the virtual environment, it means that we don't install tensorflow completely. I have encountered this error during installation. 
 
 
 
