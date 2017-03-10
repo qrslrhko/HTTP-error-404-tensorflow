@@ -71,4 +71,9 @@ Note: Make sure that there are no name of file or name of folder is "tensorflow"
 For example, if I type 'python' inide the directory of desktop and there is a folder named as "tensorflow", it could cause this error:
 
 ```
+>>> hello = tf.constant('Hello, TensorFlow!')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'tensorflow' has no attribute 'constant'
 ```
+change your auccrnet directory to another directory. For example, use 'cd ..' command line goes to upper level directory.
