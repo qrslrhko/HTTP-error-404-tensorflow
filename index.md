@@ -26,7 +26,7 @@ Note: if you use graphical installer, the folder of Anaconda is called "anaconda
 
 
 ### In order to avoid some errors, I install python 3.5 for sure. 
-### Create virtual environment for installing tensorflow by this command line.
+### Create virtual environment for installing tensorflow by this command line:
 ```
 conda create -n yourenvname python=3.5 anaconda 
 ```
@@ -35,25 +35,4 @@ conda create -n yourenvname python=3.5 anaconda
 ```
 source activate yourenvname
 ```
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
 
