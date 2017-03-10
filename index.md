@@ -81,6 +81,18 @@ AttributeError: module 'tensorflow' has no attribute 'constant'
 ```
 Change your current directory to another directory that help you solve this problem. For example, use `cd ..` command line goinf to upper level directory.
 
+Note : After installing tensorflow in this virtual environment, we only can use tensorflow in this virtual environment. If you import tensorflow outside of this virtual environment, it could cause this error:
+```
+$ python
+Python 3.6.0 |Anaconda 4.3.0 (x86_64)| 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'tensorflow'
+```
+Also, if we have this error in the virtual environment, that means we don't install tensorflow completely. I have encountered this error during installation. 
 
 
 
