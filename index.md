@@ -55,5 +55,20 @@ sudo pip3 install tensorflow-gpu
 ```
 or this one(for cpu support)
 ```
-pip3 install tensorflow
+sudo pip3 install tensorflow
+```
+
+### Let's check our installation:
+```
+$python
+.......
+>>> import tensorflow as tf
+>>> hello = tf.constant('Hello, TensorFlow!')
+>>> sess = tf.Session()
+>>> print(sess.run(hello))
+```
+Note: Make sure that there are no name of file or name of folder is "tensorflow" in current directory. 
+For example, if I type 'python' inide the directory of desktop and there is a folder named as "tensorflow", it could cause this error:
+
+```
 ```
