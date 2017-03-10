@@ -23,9 +23,8 @@ There are two methods to install Anaconda,including graphical installer and comm
 Note: if you install Anaconda through commond line, the folder of Anaconda is called "anaconda3"  
 Note: if you use graphical installer, the folder of Anaconda is called "anaconda"  
 
+In order to avoid some errors, I install python 3.5 for sure. Soemtimes it has some problems when I use python 3.6 for tensorflow. 
 
-
-### In order to avoid some errors, I install python 3.5 for sure. 
 ### 2. Create virtual environment for installing tensorflow by this command line:
 ```
 conda create -n yourenvname python=3.5 anaconda 
@@ -49,25 +48,29 @@ HTTP error 404 while getting https://storage.googleapis.com/tensorflow/mac/gpu/t
 Could not install requirement tensorflow-gpu==1.0.1 from https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl because of HTTP error 404 Client Error: Not Found for url: https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl for URL https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl
 
 ```
-Try this one(for gpu support):
+Try this one (for gpu support):
 ```
 sudo pip3 install tensorflow-gpu
 ```
-or this one(for cpu support)
+or this one (for cpu support)
 ```
 sudo pip3 install tensorflow
 ```
+Note: If you version of Python is 2.7, use `pip` instead of `pip3` 
 
 ### 5. Let's check our installation:
 ```
 $python
-.......
+Python 3.5.2 |Anaconda custom (x86_64)| 
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
 >>> import tensorflow as tf
 >>> hello = tf.constant('Hello, TensorFlow!')
 >>> sess = tf.Session()
 >>> print(sess.run(hello))
+b'Hello, testing TensorFlow!'
 ```
-Note: Make sure that there are no name of file or name of folder is `tensorflow` in current directory. 
+Note: Make sure that there are no name of file or name of folder is `tensorflow` in your current directory. 
 For example, if I type 'python' inide the directory of desktop and there is a folder named as `tensorflow`, it could cause this error:
 
 ```
@@ -77,5 +80,7 @@ Traceback (most recent call last):
 AttributeError: module 'tensorflow' has no attribute 'constant'
 ```
 Change your current directory to another directory that help you solve this problem. For example, use `cd ..` command line goinf to upper level directory.
+
+
 
 
