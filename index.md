@@ -11,13 +11,13 @@ Could not install requirement tensorflow-gpu==1.0.1 from https://storage.googlea
 - my OS version on mac: 10.10.5
 - python: 3.5.2 in :    Anaconda custom (x86_64)
 
-# Try type this commond line to know your version of python :
+### Try type this commond line to know your version of python :
 ``` 
 $ python --version
 Python 3.6.0 :: Anaconda 4.3.0 (x86_64)
 ```
 
-# Install [Anaconda](https://www.continuum.io/downloads) on mac:
+### Install [Anaconda](https://www.continuum.io/downloads) on mac:
 There are two methods to install Anaconda. It depends on what kind of version of Python you use. For example, my version of python is 3.6, I choose Anaconda3-4.3.0-MacOSX-x86_64.sh to install.
 
 Note: if you install Anaconda through commond line, the folder of Anaconda is called "anaconda3"  
@@ -34,7 +34,7 @@ FORCE=0
 Note: if you use graphical installer, the folder of Anaconda is called "anaconda"  
 
 
-# In order to avoid some errors, I install python 3.5 for sure. Use this common to create virtual environment for installing tensorflow.
+### In order to avoid some errors, I install python 3.5 for sure. Use this common to create virtual environment for installing tensorflow.
 
 ```
 conda create -n yourenvname python=3.5 anaconda 
