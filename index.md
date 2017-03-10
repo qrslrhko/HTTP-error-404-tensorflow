@@ -35,4 +35,25 @@ conda create -n yourenvname python=3.5 anaconda
 ```
 source activate yourenvname
 ```
+### According to the [giude of installing tensorflow in mac](https://www.tensorflow.org/install/install_mac), the next step is to install tensorflow into your environment:
 
+```
+pip install --ignore-installed --upgrade $TF_PYTHON_URL 
+```
+- [$TF_PYTHON_URL](https://www.tensorflow.org/install/install_mac#TF_PYTHON_URL), it depends on your version of python, CPU and GPU.
+
+If you get an error which is like as below:
+```
+HTTP error 404 while getting https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl
+  Could not install requirement tensorflow-gpu==1.0.1 from https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl because of error 404 Client Error: Not Found for url: https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl
+Could not install requirement tensorflow-gpu==1.0.1 from https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl because of HTTP error 404 Client Error: Not Found for url: https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl for URL https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl
+
+```
+Try this one(for gpu support):
+```
+sudo pip3 install tensorflow-gpu
+```
+or this one(for cpu support)
+```
+pip3 install tensorflow
+```
