@@ -17,7 +17,7 @@ $ python --version
 Python 3.6.0 :: Anaconda 4.3.0 (x86_64)
 ```
 
-### Install [Anaconda](https://www.continuum.io/downloads) on mac:
+### 1. Install [Anaconda](https://www.continuum.io/downloads) on mac:
 There are two methods to install Anaconda,including graphical installer and command line. It also depends on what kind of version of Python you use. For example, my version of python is 3.6, I choose Anaconda3-4.3.0-MacOSX-x86_64.sh to install.
 
 Note: if you install Anaconda through commond line, the folder of Anaconda is called "anaconda3"  
@@ -26,16 +26,16 @@ Note: if you use graphical installer, the folder of Anaconda is called "anaconda
 
 
 ### In order to avoid some errors, I install python 3.5 for sure. 
-### Create virtual environment for installing tensorflow by this command line:
+### 2. Create virtual environment for installing tensorflow by this command line:
 ```
 conda create -n yourenvname python=3.5 anaconda 
 ```
-### Invoke your environment by this command line:
+### 3. Invoke your environment by this command line:
 
 ```
 source activate yourenvname
 ```
-### According to the [giude of installing tensorflow in mac](https://www.tensorflow.org/install/install_mac), the next step is to install tensorflow into your environment:
+### 4. According to the [giude of installing tensorflow in mac](https://www.tensorflow.org/install/install_mac), the next step is to install tensorflow into your environment:
 
 ```
 pip install --ignore-installed --upgrade $TF_PYTHON_URL 
@@ -58,7 +58,7 @@ or this one(for cpu support)
 sudo pip3 install tensorflow
 ```
 
-### Let's check our installation:
+### 5. Let's check our installation:
 ```
 $python
 .......
